@@ -35,9 +35,9 @@ Developer-First API for Quote, 开发者的第一个行情API。
 - [行情地址说明](./http接口/行情地址说明.md)
 - [接口限制](./http接口/接口限制.md)
 - [通用标准头](./http接口/通用标准头.md)
-- [GET 最新成交报价查询](./http接口/GET 最新成交报价查询.md)
-- [GET 最新盘口报价查询](./http接口/GET 最新盘口报价查询.md)
-- [GET K线查询](./http接口/GET K线查询.md)
+- [获取最新成交报价查询](./http接口/最新成交报价查询.md)
+- [最新盘口报价查询](./http接口/最新盘口报价查询.md)
+- [K线查询](./http接口/K线查询.md)
 
 ### websocket接口
 - [行情地址说明](./websocket接口/行情地址说明.md)
