@@ -27,28 +27,26 @@ Developer-First API for Quote, 开发者的第一个行情API。
   
 
 ## 接口介绍
-[接入指南](./接入指南.md)
-[错误码说明](./错误码说明.md)
-[code列表](./code列表.md)
+- [接入指南](./接入指南.md)
+- [错误码说明](./错误码说明.md)
+- [code列表](./code列表.md)
 
 ### http接口
-[行情地址说明](./http接口/行情地址说明.md)
-[接口限制](./http接口/接口限制.md)
-[通用标准头](./http接口/通用标准头.md)
-[GET 最新成交报价查询](./http接口/GET 最新成交报价查询.md)
-[GET 最新盘口报价查询](./http接口/GET 最新盘口报价查询.md)
-[GET K线查询](./http接口/GET K线查询.md)
+- [行情地址说明](./http接口/行情地址说明.md)
+- [接口限制](./http接口/接口限制.md)
+- [通用标准头](./http接口/通用标准头.md)
+- [GET 最新成交报价查询](./http接口/GET 最新成交报价查询.md)
+- [GET 最新盘口报价查询](./http接口/GET 最新盘口报价查询.md)
+- [GET K线查询](./http接口/GET K线查询.md)
 
 ### websocket接口
-[行情地址说明](./websocket接口/行情地址说明.md)
-[接口限制](./websocket接口/接口限制.md)
-[通用标准头](./websocket接口/通用标准头.md)
-[心跳](./websocket接口/心跳.md)
-[成交报价订阅](./websocket接口/成交报价订阅.md)
-[盘口报价订阅](./websocket接口/盘口报价订阅.md)
-[取消报价订阅](./websocket接口/取消报价订阅.md)
-
-
+- [行情地址说明](./websocket接口/行情地址说明.md)
+- [接口限制](./websocket接口/接口限制.md)
+- [通用标准头](./websocket接口/通用标准头.md)
+- [心跳](./websocket接口/心跳.md)
+- [成交报价订阅](./websocket接口/成交报价订阅.md)
+- [盘口报价订阅](./websocket接口/盘口报价订阅.md)
+- [取消报价订阅](./websocket接口/取消报价订阅.md)
 
 ## Python使用示例,超简单上手
 
