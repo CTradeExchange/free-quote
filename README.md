@@ -50,7 +50,8 @@ Developer-First API for Quote, 开发者的第一个行情API。
 
 ## Python使用示例,超简单上手
 
-查看example目录
+- [http请求示例](./example/http_request.py)
+- [websocket请求示例](./example/websocket_request.py)
 
 
 
