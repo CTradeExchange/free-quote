@@ -1,4 +1,4 @@
-import requests
+import requests	# pip3 install requests
 import json
 
 # Base URL being accessed

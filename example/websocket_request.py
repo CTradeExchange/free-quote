@@ -35,7 +35,7 @@ class Feed(object):
         }
         sub_str = json.dumps(sub_param)
         ws.send(sub_str)
-        print("Following Channels are subscribed!")
+        print("depth quote are subscribed!")
 
     def on_data(self, ws, string, type, continue_flag):
         """
