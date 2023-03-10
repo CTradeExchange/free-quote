@@ -6,7 +6,7 @@ test_url = 'https://quote.tradeswitcher.com/quote-stock-api/kline?token=e945d7d9
 
 # Dictionary of query parameters (if any)
 test_parms = {
-	'trace' : 'asdfsdfa',
+	'trace' : '3baaa938-f92c-4a74-a228-fd49d5e2f8bc-1678419657806',
 	'data' : {
 		'code' : '857.HK',
 		'kline_type' : 1,
