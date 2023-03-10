@@ -1,8 +1,6 @@
-# free-quote
+# Free-quote-Developer-First API for Quote, 开发者的第一个行情API。
 
-Developer-First API for Quote, 开发者的第一个行情API。
-
-免费开源港股美股行情API
+简单好用易上手免费开源港股美股行情API
 
 ## 功能特性：
 
