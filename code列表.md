@@ -1,4 +1,4 @@
-目前支持如下code
+# 目前支持如下code
 
 | code    | 名称                      |
 | ------- | ------------------------- |
@@ -32,3 +32,10 @@
 | LLY.US  | Eli Lilly                 |
 | BAC.US  | Bank of America           |
 | KO.US   | Coca-Cola                 |
+
+# 如果需要新增其他方式，请联系
+姓名：erik wang
+电话：86-18926079386
+邮箱：erik.wang@chixi88.com
+Telegram: https://t.me/ts_support_erik
+Whatsapp: https://wa.me/19034624406
