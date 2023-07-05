@@ -4,7 +4,7 @@ import websocket    # pip install websocket-client
 class Feed(object):
 
     def __init__(self):
-        self.url = 'wss://quote.tradeswitcher.com/quote-stock-ws-api?token=e945d7d9-9e6e-4721-922a-7251a9d311d0-1678159756806'      # 这里输入websocket的url
+        self.url = 'wss://quote.tradeswitcher.com/quote-stock-b-ws-api?token=2a549434-91dc-45dc-87cf-1c9785fb48f6-1687845974595'      # 这里输入websocket的url
         self.ws = None
 
     def on_open(self, ws):
@@ -23,11 +23,11 @@ class Feed(object):
             "data":{
                 "symbol_list":[
                     {
-                        "code": "857.HK",
+                        "code": "700.HK",
                         "depth_level": 5,
                     },
                     {
-                        "code": "941.HK",
+                        "code": "9988.HK",
                         "depth_level": 5,
                     }
                 ]
