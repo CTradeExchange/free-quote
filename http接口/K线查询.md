@@ -1,33 +1,41 @@
 ## GET K线查询
 
-GET /quote-stock-api/kline
-
-> Body 请求参数
-
-```json
-{
-  "trace": "culpa cillum ea reprehenderit occaecat",
-  "data": {
-    "code": "857.HK",
-    "kline_type": 1,
-    "kline_timestamp_end": 0,
-    "query_kline_num": 2
-  }
-}
-```
+GET /quote-stock-b-api/kline
 
 ### 请求参数
 
 | 名称                   | 位置  | 类型    | 必选 | 说明                                                         |
 | ---------------------- | ----- | ------- | ---- | ------------------------------------------------------------ |
 | token                  | query | string  | 否   |                                                          |
-| body                   | body  | object  | 否   |                                                          |
-| » trace                | body  | string  | 是   | 跟踪号                                                       |
-| » data                 | body  | object  | 是   |                                                          |
-| »» code                | body  | string  | 是   | 代码                                                         |
-| »» kline_type          | body  | integer | 是   | k线类型，1分钟K，2为5分钟K，3为15分钟K，4为30分钟K，5为小时K，6为2小时K，7为4小时K，8为日K，9为周K，10为月K |
-| »» kline_timestamp_end | body  | integer | 是   | K线结束时间戳，单位秒                                        |
-| »» query_kline_num     | body  | integer | 是   | 查询K线数量，最大查询1000根                                  |
+| query                   | query  | string  | 否   | 查看query请求参数说明                                   |
+
+> query 请求参数
+
+将如下json进行UrlEncode编码，赋值到url的查询字符串的query里
+```json
+{
+  "trace": "3baaa938-f92c-4a74-a228-fd49d5e2f8bc-1678419657806",
+  "data": {
+    "code": "857.HK",
+    "kline_type": 1,
+    "kline_timestamp_end": 0,
+    "query_kline_num": 2,
+    "adjust_type": 0
+  }
+}
+```
+
+### query请求参数
+
+| 名称                   | 类型    | 必选 | 说明                                                         |
+| ---------------------- | ------- | ---- | ------------------------------------------------------------ |
+| trace                | string  | 是   | 追踪码，用来查询日志使用，请保证每次请求时唯一 |
+| data                 | object  | 是   |                                                          |
+| » code                | string  | 是   | 请查看code列表，选择你要查询的code |
+| » kline_type          | integer | 是   | k线类型，1分钟K，2为5分钟K，3为15分钟K，4为30分钟K，5为小时K，6为2小时K，7为4小时K，8为日K，9为周K，10为月K |
+| » kline_timestamp_end | integer | 是   | 从那个时间点往前查，为0表示从当前时间，默认为0 |
+| » query_kline_num     | integer | 是   | 查询多少根K线，最多1000根 |
+| » adjust_type     | integer | 是   | 复权类型,对于股票类的code才有效，例如：0:除权,1:前复权 |
 
 > 返回示例
 
