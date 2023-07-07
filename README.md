@@ -54,7 +54,8 @@
 ## 联系我们
 
 - Telegram: https://t.me/ts_support_erik
-- Whatsapp: https://wa.me/19034624406
 
 ## 其他作品
 
+- Free Forex Quote API: https://github.com/CTradeExchange/free-forex-market-data
+- Free Crypto Quote API: https://github.com/CTradeExchange/free-crypto-market-data
