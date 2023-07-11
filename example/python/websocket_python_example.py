@@ -4,7 +4,7 @@ import websocket    # pip install websocket-client
 class Feed(object):
 
     def __init__(self):
-        self.url = 'wss://quote.aatest.online/quote-stock-b-ws-api?token=e945d7d9-9e6e-4721-922a-7251a9d311d0-1678159756806'      # 这里输入websocket的url
+        self.url = 'wss://quote.aatest.online/quote-stock-b-ws-api?token=e945d7d9-9e6e-4721-922a-7251a9d311d0-1678159756806'  # 这里输入websocket的url
         self.ws = None
 
     def on_open(self, ws):
@@ -23,16 +23,18 @@ class Feed(object):
             "data":{
                 "symbol_list":[
                     {
-                        "code": "857.HK",
+                        "code": "700.HK",
                         "depth_level": 5,
                     },
                     {
-                        "code": "941.HK",
+                        "code": "UNH.US",
                         "depth_level": 5,
                     }
                 ]
             }
         }
+        
+        #如果希望长时间运行，除了需要发送订阅之外，还需要修改代码，定时发送心跳，避免连接断开，具体查看接口文档
         sub_str = json.dumps(sub_param)
         ws.send(sub_str)
         print("depth quote are subscribed!")
