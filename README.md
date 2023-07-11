@@ -53,7 +53,8 @@
 
 ## 联系我们
 
-- Telegram: https://t.me/ts_support_erik
+- Telegram: https://t.me/JustinCaspian
+- Email: cavill.yu@chixi88.com 
 
 ## 其他作品
 
