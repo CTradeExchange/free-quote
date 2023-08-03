@@ -1,10 +1,8 @@
 # 目前支持如下code
 
 ## 目前支持如下股票代码，需要新增产品可直接联系<br/>
-姓名：erik wang<br/>
-邮箱：erik.wang@chixi88.com<br/>
-Telegram: https://t.me/ts_support_erik<br/>
-Whatsapp: https://wa.me/19034624406<br/>
+- Telegram: https://t.me/JustinCaspian
+- Email: cavill.yu@chixi88.com 
 
 | code    | 名称                      |
 | ------- | ------------------------- |
