@@ -65,8 +65,8 @@
 
 ## 联系我们
 
-- Telegram: https://t.me/JustinCaspian
-- Email: cavill.yu@chixi88.com 
+- Telegram: https://t.me/TS_SUPPORT_Lester
+- Email: lester.lin@chixi88.com
 
 ## 其他作品
 
