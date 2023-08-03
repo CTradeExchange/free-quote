@@ -44,7 +44,7 @@
 - [盘口报价订阅](./websocket接口/盘口报价订阅.md)
 - [取消报价订阅](./websocket接口/取消报价订阅.md)
 
-### 免费token获取
+## 免费token获取
 - [token申请](./token申请.md)
 
 ## 使用示例,超简单上手
