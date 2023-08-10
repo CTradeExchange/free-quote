@@ -71,8 +71,9 @@ public class WebSocketJavaExample {
     public static void main(String[] args) throws Exception, URISyntaxException, DeploymentException, IOException, IllegalArgumentException, SecurityException, NoSuchMethodException, IllegalAccessException, InvocationTargetException, InstantiationException {
 
         WebSocketContainer container = ContainerProvider.getWebSocketContainer();
-
-        URI uri = new URI("wss://quote.aatest.online/quote-stock-b-ws-api?token=e945d7d9-9e6e-4721-922a-7251a9d311d0-1678159756806"); // Replace with your websocket endpoint URL
+		//token申请：https://github.com/CTradeExchange/free-quote/blob/master/token%E7%94%B3%E8%AF%B7.md
+		//官网：https://alltick.co
+        URI uri = new URI("wss://quote.tradeswitcher.com/quote-stock-b-ws-api?token=e945d7d9-9e6e-4721-922a-7251a9d311d0-1678159756806"); // Replace with your websocket endpoint URL
 
         WebSocketJavaExample client = new WebSocketJavaExample();
 

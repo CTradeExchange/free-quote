@@ -1,15 +1,15 @@
 import json
 import websocket    # pip install websocket-client
 
+'''
+token申请：https://github.com/CTradeExchange/free-quote/blob/master/token%E7%94%B3%E8%AF%B7.md
+官网：https://alltick.co
+'''
+
 class Feed(object):
 
     def __init__(self):
-<<<<<<< HEAD:example/websocket_request.py
-        self.url = 'wss://quote.aatest.online/quote-b-ws-api?token=3662a972-1a5d-4bb1-88b4-66ca0c402a03-1688712831841'
-        #self.url = 'wss://quote.aatest.online/quote-b-ws-api?token=a9037628-30ae-4ffa-bd3c-9f7beaf1d44d-1688712831666'      # 这里输入websocket的url
-=======
-        self.url = 'wss://quote.aatest.online/quote-stock-b-ws-api?token=e945d7d9-9e6e-4721-922a-7251a9d311d0-1678159756806'  # 这里输入websocket的url
->>>>>>> cb01ae1482e0c2f5637228f2aebd652618f56ae7:example/python/websocket_python_example.py
+        self.url = 'wss://quote.tradeswitcher.com/quote-stock-b-ws-api?token=e945d7d9-9e6e-4721-922a-7251a9d311d0-1678159756806'  # 这里输入websocket的url
         self.ws = None
 
     def on_open(self, ws):
@@ -28,19 +28,11 @@ class Feed(object):
             "data":{
                 "symbol_list":[
                     {
-<<<<<<< HEAD:example/websocket_request.py
-                        "code": "ETHUSDT",
-                        "depth_level": 5,
-                    },
-                    {
-                        "code": "GBPJPY",
-=======
                         "code": "700.HK",
                         "depth_level": 5,
                     },
                     {
                         "code": "UNH.US",
->>>>>>> cb01ae1482e0c2f5637228f2aebd652618f56ae7:example/python/websocket_python_example.py
                         "depth_level": 5,
                     }
                 ]
