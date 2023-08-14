@@ -48,6 +48,10 @@
 - [token申请](./token申请.md)
 
 ## 使用示例,超简单上手
+### php:
+
+- [http请求示例](./example/php/php_http_curl.php)
+- [websocket请求示例](./example/php/php_websocket_workerman.php)
 
 ### python:
 
