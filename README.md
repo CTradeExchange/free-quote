@@ -1,9 +1,10 @@
 # 作者：AllTick
 # 项目名称：AllTick Real-time Quotation APIs
-# 本项目已经迁移至新地址，请移步到新的项目地址：
-[https://github.com/alltick/realtime-forex-crypto-stock-tick-finance-websocket-api](https://github.com/alltick/realtime-forex-crypto-stock-tick-finance-websocket-api)
 # 官网
 [https://alltick.co](https://alltick.co)
+# 本项目已经迁移至新地址，请移步到新的项目地址：
+[https://github.com/alltick/realtime-forex-crypto-stock-tick-finance-websocket-api](https://github.com/alltick/realtime-forex-crypto-stock-tick-finance-websocket-api)
+
 
 # 免费开源股票API、港股API、美股API、沪深股票API、A股API实时股票行情数据
 
