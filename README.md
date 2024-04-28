@@ -5,6 +5,12 @@
 # 本项目已经迁移至新地址，请移步到新的项目地址：
 [https://github.com/alltick/realtime-forex-crypto-stock-tick-finance-websocket-api](https://github.com/alltick/realtime-forex-crypto-stock-tick-finance-websocket-api)
 
+## 联系我们
+Email: support@alltick.co
+
+Skype: [https://join.skype.com/invite/xokTc695huNu](https://join.skype.com/invite/xokTc695huNu)
+
+Telegram: [https://t.me/alltick001](https://t.me/alltick001)
 
 # 免费开源股票API、港股API、美股API、沪深股票API、A股API实时股票行情数据
 
@@ -83,8 +89,12 @@
 
 ## 联系我们
 
-- Telegram: https://t.me/TS_SUPPORT_Lester
-- Email: lester.lin@chixi88.com
+## 联系我们
+Email: support@alltick.co
+
+Skype: [https://join.skype.com/invite/xokTc695huNu](https://join.skype.com/invite/xokTc695huNu)
+
+Telegram: [https://t.me/alltick001](https://t.me/alltick001)
 
 ## 其他作品
 
