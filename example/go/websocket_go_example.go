@@ -28,7 +28,7 @@ type Request struct {
 	官网：https://alltick.co
 */
 const(
-	url = "wss://quote.tradeswitcher.com/quote-stock-b-ws-api?token=e945d7d9-9e6e-4721-922a-7251a9d311d0-1678159756806"
+	url = "wss://quote.alltick.io/quote-stock-b-ws-api?token=e945d7d9-9e6e-4721-922a-7251a9d311d0-1678159756806"
 )
 
 func websocket_example() {

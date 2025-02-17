@@ -73,7 +73,7 @@ public class WebSocketJavaExample {
         WebSocketContainer container = ContainerProvider.getWebSocketContainer();
 		//token申请：https://github.com/CTradeExchange/free-quote/blob/master/token%E7%94%B3%E8%AF%B7.md
 		//官网：https://alltick.co
-        URI uri = new URI("wss://quote.tradeswitcher.com/quote-stock-b-ws-api?token=e945d7d9-9e6e-4721-922a-7251a9d311d0-1678159756806"); // Replace with your websocket endpoint URL
+        URI uri = new URI("wss://quote.alltick.io/quote-stock-b-ws-api?token=e945d7d9-9e6e-4721-922a-7251a9d311d0-1678159756806"); // Replace with your websocket endpoint URL
 
         WebSocketJavaExample client = new WebSocketJavaExample();
 

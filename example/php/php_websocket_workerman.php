@@ -10,7 +10,7 @@ $worker = new Worker();
 $worker->onWorkerStart = function()
 {
     // 以websocket协议连接远程websocket服务器
-    $ws_connection = new AsyncTcpConnection("ws://quote.tradeswitcher.com/quote-stock-b-ws-api?token=e945d7d9-9e6e-4721-922a-7251a9d311d0-1678159756806");
+    $ws_connection = new AsyncTcpConnection("ws://quote.alltick.io/quote-stock-b-ws-api?token=e945d7d9-9e6e-4721-922a-7251a9d311d0-1678159756806");
     // 每隔55秒向服务端发送一个opcode为0x9的websocket心跳
     $ws_connection->websocketPingInterval = 10;
     $ws_connection->websocketType = Ws::BINARY_TYPE_BLOB; // BINARY_TYPE_BLOB为文本 BINARY_TYPE_ARRAYBUFFER为二进制

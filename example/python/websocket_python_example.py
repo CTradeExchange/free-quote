@@ -9,7 +9,7 @@ token申请：https://github.com/CTradeExchange/free-quote/blob/master/token%E7%
 class Feed(object):
 
     def __init__(self):
-        self.url = 'wss://quote.tradeswitcher.com/quote-stock-b-ws-api?token=e945d7d9-9e6e-4721-922a-7251a9d311d0-1678159756806'  # 这里输入websocket的url
+        self.url = 'wss://quote.alltick.io/quote-stock-b-ws-api?token=e945d7d9-9e6e-4721-922a-7251a9d311d0-1678159756806'  # 这里输入websocket的url
         self.ws = None
 
     def on_open(self, ws):
