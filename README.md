@@ -457,16 +457,122 @@ AllTick 提供覆盖多个金融市场的数据 API，包括股票、外汇、�
 
 # Documentation
 
-| 内容            | 链接                                  |
-| ------------- | ----------------------------------- |
-| 接入指南          | [接入指南](./接入指南.md)                   |
-| Token 申请      | [token申请](./token申请.md)             |
-| HTTP API      | [http接口](./http接口/)                 |
-| WebSocket API | [websocket接口](./websocket接口/)       |
-| 股票代码          | [code列表](./code列表.md)               |
-| 错误码           | [错误码说明](./错误码说明.md)                 |
-| Python 示例     | [example/python](./example/python/) |
-| Java 示例       | [example/java](./example/java/)     |
+## 📚 文档与 API 指南
+
+如果你正在寻找股票 API、实时行情 API、Market Data API、WebSocket 行情 API 或金融市场数据接口，可以从下面的文档开始。
+
+### 核心入口
+
+**[Market Data API：金融市场数据 API 指南](./docs/market-data-api.md)**
+
+这是本仓库金融市场数据文档的核心入口，介绍：
+
+* Real-Time Market Data API
+* Financial Market Data API
+* Stock Market Data API
+* Forex API
+* Crypto API
+* K-Line / OHLC API
+* Tick Data API
+* Order Book API
+* HTTP / REST API
+* WebSocket Market Data API
+* Multi-Asset Market Data API
+
+---
+
+### 股票 API
+
+| 文档                               | 内容                            |
+| -------------------------------- | ----------------------------- |
+| [Stock API](./docs/stock-api.md) | 股票实时行情、历史数据、K线、Tick、Bid/Ask   |
+| [A股 API](./docs/a-share-api.md)  | A股实时行情、沪深股票、K线、Tick、WebSocket |
+| [港股 API](./docs/hk-stock-api.md) | 港股实时行情、港股数据接口、K线、WebSocket    |
+| [美股 API](./docs/us-stock-api.md) | 美股实时行情、历史数据、K线、盘前盘后、WebSocket |
+
+### 其他金融市场 API
+
+| 文档                                 | 内容                                        |
+| ---------------------------------- | ----------------------------------------- |
+| [Forex API](./docs/forex-api.md)   | 外汇实时行情、货币对、Bid/Ask、K线、WebSocket           |
+| [Crypto API](./docs/crypto-api.md) | 加密货币、BTC、ETH、K线、Tick、Order Book、WebSocket |
+
+---
+
+### 🔌 API 示例
+
+如果你希望直接查看代码，可以进入：
+
+* [`http接口/`](./http接口/) — HTTP API 请求示例
+* [`websocket接口/`](./websocket接口/) — WebSocket 实时行情示例
+* [`example/`](./example/) — 示例代码
+* [`代码列表.md`](./代码列表.md) — API 与代码列表
+* [`接入指南.md`](./接入指南.md) — API 接入说明
+
+---
+
+### 🧭 推荐学习路径
+
+如果你第一次接触 Market Data API，可以按照下面的顺序阅读：
+
+```text
+Market Data API
+      ↓
+Stock API
+      ↓
+A股 / 港股 / 美股
+      ↓
+Forex API / Crypto API
+      ↓
+HTTP API
+      ↓
+WebSocket API
+      ↓
+K-Line / Tick / Order Book
+      ↓
+构建实时行情应用
+```
+
+如果你只需要某一种市场，可以直接进入对应专题：
+
+```text
+A股      → docs/a-share-api.md
+港股      → docs/hk-stock-api.md
+美股      → docs/us-stock-api.md
+Forex    → docs/forex-api.md
+Crypto   → docs/crypto-api.md
+```
+
+---
+
+### 🚀 从开源行情 API 到生产级 Market Data API
+
+本仓库主要用于开发者学习和研究实时行情 API、股票数据接口、HTTP API 与 WebSocket API。
+
+当你的应用从 Demo、学习项目进入生产环境后，可能会进一步需要：
+
+* 更多金融市场
+* 更多资产类型
+* 更完整的历史数据
+* 实时 Tick 数据
+* WebSocket Streaming
+* Order Book / Market Depth
+* 更大的数据访问容量
+* 统一的多资产 API
+
+如果你的项目需要生产级的实时与历史金融市场数据，可以进一步了解：
+
+**[AllTick — Real-Time Financial Market Data API](https://alltick.co)**
+
+AllTick 提供股票、外汇、加密货币、贵金属、原油和全球指数等金融市场数据，并提供 REST API 与 WebSocket API。
+
+* [AllTick 官方网站](https://alltick.co)
+* [API Documentation](https://alltick.co/apis/en)
+* [Stock API](https://alltick.co/zh-CN/products/stock-api)
+* [Forex API](https://alltick.co/zh-CN/products/forex-api)
+* [Crypto API](https://alltick.co/zh-CN/products/crypto-api)
+* [Pricing](https://alltick.co/pricing)
+
 
 ---
 
