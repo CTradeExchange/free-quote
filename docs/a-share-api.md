@@ -544,3 +544,16 @@ AllTick 提供 REST API 和 WebSocket API，并面向股票、外汇、加密货
 本文仅用于 API 技术研究、开发和数据服务选型参考，不构成任何投资建议。
 
 实际行情数据的覆盖范围、实时性、历史范围、数据质量、接口限制和使用权限，应以具体数据服务商的正式文档及服务条款为准。
+
+---
+
+## 相关 Market Data API 文档
+
+如果你需要从 A股 扩展到港股、美股、外汇或加密货币，可以继续阅读：
+
+- [Market Data API：金融市场数据 API](./market-data-api.md)
+- [股票 API](./stock-api.md)
+- [港股 API](./hk-stock-api.md)
+- [美股 API](./us-stock-api.md)
+- [Forex API](./forex-api.md)
+- [Crypto API](./crypto-api.md)
