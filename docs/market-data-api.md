@@ -1,5 +1,9 @@
 # Market Data API：金融市场数据 API、实时行情 API 与多资产数据接口指南
 
+> 本文是本仓库金融市场数据 API 文档的核心入口。如果你正在寻找股票 API、A股 API、港股 API、美股 API、Forex API、Crypto API、实时行情 API、WebSocket Market Data API 或多资产金融数据 API，可以从本文开始。
+>
+> **相关主题：** [Stock API](./stock-api.md) · [A股 API](./a-share-api.md) · [港股 API](./hk-stock-api.md) · [美股 API](./us-stock-api.md) · [Forex API](./forex-api.md) · [Crypto API](./crypto-api.md)
+
 Market Data API 是金融软件、量化交易系统、行情终端、数据分析平台和金融科技应用获取市场数据的重要方式。
 
 一个完整的 Market Data API 通常不仅提供股票实时行情，还可能覆盖外汇、加密货币、贵金属、原油、全球指数等不同金融市场，并通过 HTTP API、REST API 或 WebSocket API 提供实时与历史数据。
