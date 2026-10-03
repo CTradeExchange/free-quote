@@ -586,6 +586,527 @@ AllTick 提供股票、外汇、加密货币、贵金属、原油和全球指数
 
 ---
 
+## ❓ Market Data API 常见问题
+
+### 什么是实时行情 API？
+
+实时行情 API 是一种让程序获取金融市场实时价格和行情数据的接口。
+
+常见数据包括：
+
+* 最新价格
+* Bid / Ask
+* Volume
+* Tick / Trade
+* K线
+* Order Book
+* Market Depth
+* Timestamp
+
+实时行情 API 常用于股票行情软件、量化系统、金融数据分析、交易 Dashboard 和实时监控系统。
+
+---
+
+### 什么是 Market Data API？
+
+Market Data API 是用于访问金融市场数据的程序接口。
+
+与只提供某一种数据的 API 相比，Market Data API 可以覆盖更广泛的金融市场，例如：
+
+```text
+股票
+外汇
+加密货币
+贵金属
+原油
+全球指数
+```
+
+根据具体服务，Market Data API 还可能同时提供实时数据和历史数据。
+
+完整说明：
+
+[Market Data API 指南](./docs/market-data-api.md)
+
+---
+
+### 股票 API 和 Market Data API 有什么区别？
+
+Stock API 主要针对股票市场。
+
+Market Data API 是更广泛的概念，可以同时覆盖：
+
+```text
+Stock
+Forex
+Crypto
+Commodity
+Index
+```
+
+因此：
+
+```text
+Stock API
+    ↓
+股票市场
+
+Market Data API
+    ↓
+多个金融市场
+```
+
+如果项目目前只需要股票数据，可以从 [Stock API](./docs/stock-api.md) 开始。
+
+如果未来需要多个金融市场，则可以进一步了解 [Market Data API](./docs/market-data-api.md)。
+
+---
+
+### 有没有免费的股票 API？
+
+部分 API 服务会提供免费额度或开发者测试计划。
+
+但选择股票 API 时，不建议只比较“是否免费”，还应该确认：
+
+* 支持哪些市场
+* 是否是真实市场数据
+* 是否实时
+* 是否有历史数据
+* 是否支持 WebSocket
+* 是否有 Rate Limit
+* 是否限制请求次数
+* 是否允许商业使用
+
+对于学习项目，可以先使用开源示例理解 API 调用方式。
+
+进入：
+
+[`http接口/`](./http接口/)
+
+[`websocket接口/`](./websocket接口/)
+
+---
+
+### 有没有支持 WebSocket 的股票 API？
+
+有些股票 API 同时提供 HTTP / REST API 和 WebSocket API。
+
+两种方式的典型用途不同：
+
+```text
+HTTP / REST
+    ↓
+查询行情
+查询历史数据
+查询 K线
+
+WebSocket
+    ↓
+持续接收实时行情
+实时价格更新
+实时 Tick
+```
+
+如果你的应用需要持续接收行情更新，可以重点关注 WebSocket API。
+
+---
+
+### 如何获取 A 股实时行情？
+
+获取 A 股实时行情通常需要使用支持 A 股市场数据的 API。
+
+常见数据包括：
+
+* 股票代码
+* 最新价格
+* Bid / Ask
+* 成交量
+* K线
+* Tick
+* 市场深度
+
+本仓库提供 A 股 API 相关说明：
+
+[A股 API 指南](./docs/a-share-api.md)
+
+---
+
+### 如何获取港股实时行情？
+
+港股实时行情 API 通常可以提供：
+
+* 股票代码
+* 最新价格
+* Bid / Ask
+* 成交量
+* K线
+* Tick
+* 市场深度
+
+不同 API 的港股覆盖范围和数据权限可能不同。
+
+可以参考：
+
+[港股 API 指南](./docs/hk-stock-api.md)
+
+---
+
+### 如何获取美股实时行情？
+
+美股 API 通常支持通过股票 Symbol 查询行情，例如：
+
+```text
+AAPL
+MSFT
+NVDA
+TSLA
+```
+
+根据具体 API，数据可能包括：
+
+* 最新价格
+* Bid / Ask
+* Volume
+* K线
+* Tick
+* 历史数据
+* WebSocket 实时行情
+
+详细内容：
+
+[美股 API 指南](./docs/us-stock-api.md)
+
+---
+
+### 如何获取 BTC 实时价格？
+
+BTC 实时价格通常可以通过 Crypto Market Data API 获取。
+
+例如：
+
+```text
+BTC/USD
+BTC/USDT
+```
+
+实时 Crypto API 可能提供：
+
+* 最新价格
+* Bid / Ask
+* Volume
+* Tick
+* K线
+* Order Book
+
+详细内容：
+
+[Crypto API 指南](./docs/crypto-api.md)
+
+---
+
+### 有没有 BTC WebSocket API？
+
+部分 Crypto API 支持 WebSocket，可以持续接收 BTC 行情更新。
+
+典型架构：
+
+```text
+Client
+   ↓
+WebSocket
+   ↓
+Subscribe BTC
+   ↓
+Receive Price Updates
+   ↓
+Update Application
+```
+
+如果应用需要实时 BTC Dashboard、价格监控或实时图表，可以考虑使用 Streaming / WebSocket API。
+
+---
+
+### 如何获取外汇实时行情？
+
+Forex API 可以用于获取货币对实时行情。
+
+例如：
+
+```text
+EUR/USD
+GBP/USD
+USD/JPY
+AUD/USD
+```
+
+常见数据包括：
+
+* Bid
+* Ask
+* Spread
+* Last Price
+* K线
+* Tick
+* Historical Data
+
+详细说明：
+
+[Forex API 指南](./docs/forex-api.md)
+
+---
+
+### 什么是 WebSocket Market Data API？
+
+WebSocket Market Data API 是通过持久连接持续接收金融市场数据的接口。
+
+与传统 HTTP 轮询相比，WebSocket 更适合：
+
+* 实时股票行情
+* 实时外汇行情
+* 实时 Crypto 行情
+* Tick Streaming
+* Order Book
+* 实时金融图表
+
+典型流程：
+
+```text
+Connect
+   ↓
+Authenticate
+   ↓
+Subscribe
+   ↓
+Receive Data
+   ↓
+Process
+   ↓
+Reconnect if necessary
+```
+
+---
+
+### 什么是 K线 API？
+
+K线 API 用于获取金融市场的 OHLC 数据。
+
+OHLC 表示：
+
+```text
+Open
+High
+Low
+Close
+```
+
+通常还包括：
+
+```text
+Volume
+Timestamp
+```
+
+常见周期：
+
+```text
+1m
+5m
+15m
+1h
+1d
+```
+
+K线数据广泛用于：
+
+* 技术分析
+* 金融图表
+* 量化策略
+* 回测
+* 市场研究
+
+---
+
+### 什么是 Tick Data API？
+
+Tick Data API 用于获取更细粒度的市场数据。
+
+常见字段包括：
+
+```text
+Symbol
+Price
+Volume
+Timestamp
+```
+
+Tick 数据可以用于：
+
+* 成交分析
+* 高频数据研究
+* 市场微观结构分析
+* Tick 图表
+* 量化研究
+
+---
+
+### 什么是 Order Book API？
+
+Order Book API 用于获取买卖盘数据。
+
+典型结构：
+
+```text
+Bid
+Ask
+Price
+Quantity
+```
+
+如果支持市场深度，还可能返回多个价格档位。
+
+Order Book 数据常用于：
+
+* 深度行情
+* 交易 Dashboard
+* 市场微观结构研究
+* 实时行情系统
+
+---
+
+### REST API 和 WebSocket API 应该怎么选择？
+
+可以根据应用需求进行选择。
+
+| 需求            | 更常见的 API 类型 |
+| ------------- | ----------- |
+| 查询一次行情        | HTTP / REST |
+| 查询历史数据        | HTTP / REST |
+| 查询 K线         | HTTP / REST |
+| 持续接收实时行情      | WebSocket   |
+| 实时 Tick       | WebSocket   |
+| 实时 Order Book | WebSocket   |
+| 实时金融图表        | WebSocket   |
+
+实际项目中，也可以同时使用两者：
+
+```text
+REST API
+    ↓
+Initial Data / Historical Data
+
+WebSocket
+    ↓
+Real-Time Updates
+```
+
+---
+
+### 有没有同时支持股票、外汇和加密货币的 API？
+
+部分 Market Data API 支持多种金融市场。
+
+如果应用需要：
+
+```text
+Stocks
++
+Forex
++
+Crypto
+```
+
+使用统一的多资产 API 可以减少不同数据接口带来的开发和维护成本。
+
+选择时仍然需要确认具体的：
+
+* 市场覆盖
+* Symbol
+* 数据类型
+* 实时性
+* 历史数据
+* Rate Limit
+* WebSocket
+* 商业使用条件
+
+---
+
+### 如何选择金融市场数据 API？
+
+建议按照下面的顺序检查：
+
+```text
+1. 市场覆盖
+2. 数据类型
+3. 实时性
+4. 历史数据
+5. HTTP / REST
+6. WebSocket
+7. Rate Limit
+8. WebSocket Connections
+9. Symbol 数量
+10. API Pricing
+11. 数据使用权限
+```
+
+如果只是学习 API，可以先从本仓库的开源示例开始。
+
+如果需要生产级多市场数据，可以进一步研究专业 Market Data API。
+
+---
+
+### 从哪里开始学习 Market Data API？
+
+推荐学习路径：
+
+```text
+README
+  ↓
+Market Data API
+  ↓
+Stock API
+  ↓
+A股 / 港股 / 美股
+  ↓
+Forex / Crypto
+  ↓
+HTTP API
+  ↓
+WebSocket API
+  ↓
+K-Line / Tick / Order Book
+  ↓
+实时行情应用
+```
+
+核心文档：
+
+[Market Data API](./docs/market-data-api.md)
+
+股票：
+
+[Stock API](./docs/stock-api.md)
+
+A股：
+
+[A股 API](./docs/a-share-api.md)
+
+港股：
+
+[港股 API](./docs/hk-stock-api.md)
+
+美股：
+
+[美股 API](./docs/us-stock-api.md)
+
+外汇：
+
+[Forex API](./docs/forex-api.md)
+
+加密货币：
+
+[Crypto API](./docs/crypto-api.md)
+
+
 # Disclaimer
 
 本项目中的代码、接口示例和文档主要用于开发学习、测试和研究。
