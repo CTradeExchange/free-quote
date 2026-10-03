@@ -1021,3 +1021,16 @@ BTC 通常通过交易对表示，例如 BTC/USD；股票通常通过股票代�
 加密资产具有较高的市场风险。本文不构成投资建议。
 
 具体 API 字段、请求方式、数据来源、覆盖范围和权限，请以对应数据服务商的官方 API 文档为准。
+
+---
+
+## 相关 Market Data API 文档
+
+如果你的应用需要从加密货币扩展到股票、外汇或其他金融市场，可以继续阅读：
+
+- [Market Data API：金融市场数据 API](./market-data-api.md)
+- [股票 API](./stock-api.md)
+- [A股 API](./a-share-api.md)
+- [港股 API](./hk-stock-api.md)
+- [美股 API](./us-stock-api.md)
+- [Forex API](./forex-api.md)
