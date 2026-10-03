@@ -980,3 +980,16 @@ AMZN
 不同金融市场的数据授权、实时行情权限、历史数据权限以及商业使用规则可能不同。生产环境中的数据使用应遵守相关交易所、数据供应商以及适用法律法规的要求。
 
 具体 API 字段、请求方式、数据覆盖范围和权限，请以对应数据服务商的官方 API 文档为准。
+
+---
+
+## 相关 Market Data API 文档
+
+如果你的应用需要从美股扩展到全球股票、外汇或加密货币市场，可以继续阅读：
+
+- [Market Data API：金融市场数据 API](./market-data-api.md)
+- [股票 API](./stock-api.md)
+- [A股 API](./a-share-api.md)
+- [港股 API](./hk-stock-api.md)
+- [Forex API](./forex-api.md)
+- [Crypto API](./crypto-api.md)
